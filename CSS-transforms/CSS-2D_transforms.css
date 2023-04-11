@@ -1,0 +1,42 @@
+.dim
+{
+    margin: 100px;
+    width: 100px;
+    height: 200px;
+    background-color: cornflowerblue;
+}
+.dim1
+{
+    margin: 100px;
+    width: 100px;
+    height: 200px;
+    background-color: cornflowerblue;
+    transform: rotate(45deg);
+}
+
+.dim2
+{
+    margin: 100px;
+    width: 100px;
+    height: 200px;
+    background-color: cornflowerblue;
+    transform: skew(45deg);
+}
+
+.dim3
+{
+    margin: 100px;
+    width: 100px;
+    height: 200px;
+    background-color: cornflowerblue;
+    transform:scaleX(200%);
+}
+
+.dim4
+{
+    margin: 100px;
+    width: 100px;
+    height: 200px;
+    background-color: cornflowerblue;
+    transform: translate(200px,200px);
+}
