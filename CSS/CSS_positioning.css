@@ -1,0 +1,13 @@
+div
+{
+    margin: 8px;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(165, 42, 42, 0.117);
+    border: 2px solid black;
+    display: inline-block;
+}
+.box1
+{
+    position: relative;
+}

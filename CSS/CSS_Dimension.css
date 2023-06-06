@@ -1,0 +1,28 @@
+.box
+{
+    display: flex;
+}
+.box1
+{
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-color: thistle;
+}
+.box2
+{
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-color: thistle;
+}
+.box3
+{
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    position: sticky;
+    background-color: thistle;
+}

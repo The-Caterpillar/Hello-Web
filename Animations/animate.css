@@ -1,0 +1,66 @@
+*{
+    /* width: 99.5%; */
+    height: 100%;
+    background-color: lavender;
+    /* box-sizing: border-box; */
+}
+
+.container{
+    /* position: relative; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* top: 15em; */
+}
+
+.box{
+    margin: 3rem;
+    height: 10rem;
+    width: 10rem;
+    font-size: 0.8em;
+    border: 0.2rem solid pink;
+    background-color: rgb(124, 201, 231);
+    color:deeppink;
+    text-align: center;
+    
+    /* transition: 2s cubic-bezier(0, 1.61, 1,-0.97); */
+    transition: 3s ease;
+}
+.box:hover{
+    transform: translateX(30rem) rotate(360deg);
+    /* height: 20rem;
+    width: 20rem; */
+    font-size: larger;
+    color: white;
+    background-color: rgb(154, 162, 216);
+}
+
+
+.animation-box
+{
+    /* margin: 3rem;  */
+    height: 10rem;
+    width: 10rem;
+    font-size: 0.8em;
+    border: 0.2rem solid pink;
+    background-color: rgb(124, 201, 231);
+    color:deeppink;
+    text-align: center;
+
+
+    animation-name: saras;
+    animation-duration: 5s;
+    animation-iteration-count: 5;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+    animation-direction: normal; /* reverse, alternate */
+    /* animation-fill-mode: ;  */
+}
+@keyframes saras{
+    from{
+        width: 10rem;
+    }
+    to{
+        width:100%;
+    }
+}
