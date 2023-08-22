@@ -115,7 +115,7 @@ catch(e)
     var num = 5;
     console.log(num);
 }
-console.log(num); // num is not defined 
+console.log(num); // num is not defined
 
 
 // REDUCING an Array:
