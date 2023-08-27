@@ -375,3 +375,226 @@ for (let i = 0; i < x.length; i++) {
   text += x.elements[i].value + "<br>";
 }
 document.getElementById("demo").innerHTML = text;
+
+
+
+/**
+JavaScript HTML DOM - Changing HTML
+The HTML DOM allows JavaScript to change the content of HTML elements.
+
+Changing HTML Content:
+The easiest way to modify the content of an HTML element is by using the innerHTML property.
+
+To change the content of an HTML element, use this syntax:
+document.getElementById(id).innerHTML = new HTML
+
+
+Changing the Value of an Attribute:
+
+To change the value of an HTML attribute, use this syntax:
+document.getElementById(id).attribute = new value
+
+This example changes the value of the src attribute of an <img> element:
+Example:
+<!DOCTYPE html>
+<html>
+<body>
+<img id="myImage" src="smiley.gif">
+
+<script>
+document.getElementById("myImage").src = "landscape.jpg";
+</script>
+
+</body>
+</html>
+
+Example explained:
+The HTML document above contains an <img> element with id="myImage"
+We use the HTML DOM to get the element with id="myImage"
+A JavaScript changes the src attribute of that element from "smiley.gif" to "landscape.jpg"
+
+
+Dynamic HTML content:
+JavaScript can create dynamic HTML content:
+Date : Sat Aug 26 2023 20:34:41 GMT+0530 (India Standard Time)
+
+Example:
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+document.getElementById("demo").innerHTML = "Date : " + Date(); </script>
+</body>
+</html>
+document.write()
+In JavaScript, document.write() can be used to write directly to the HTML output stream:
+
+Example
+<!DOCTYPE html>
+<html>
+<body>
+<p>Bla bla bla</p>
+<script>
+document.write(Date());
+</script>
+<p>Bla bla bla</p>
+</body>
+</html>
+
+Never use document.write() after the document is loaded. It will overwrite the document.
+
+
+*/
+
+
+
+
+// DOM FORMS:
+
+/*
+
+JavaScript Form Validation
+HTML form validation can be done by JavaScript.
+
+If a form field (fname) is empty, this function alerts a message, and returns false, to prevent the form from being submitted:
+
+JavaScript Example
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+The function can be called when the form is submitted:
+
+HTML Form Example
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+Name: <input type="text" name="fname">
+<input type="submit" value="Submit">
+</form>
+
+JavaScript Can Validate Numeric Input
+JavaScript is often used to validate numeric input
+
+
+
+Automatic HTML Form Validation:
+HTML form validation can be performed automatically by the browser:
+If a form field (fname) is empty, the required attribute prevents this form from being submitted:
+
+HTML Form Example
+<form action="/action_page.php" method="post">
+  <input type="text" name="fname" required>
+  <input type="submit" value="Submit">
+</form>
+
+Automatic HTML form validation does not work in Internet Explorer 9 or earlier.
+*/
+
+
+/*
+
+Data Validation
+Data validation is the process of ensuring that user input is clean, correct, and useful.
+
+Typical validation tasks are:
+
+has the user filled in all required fields?
+has the user entered a valid date?
+has the user entered text in a numeric field?
+Most often, the purpose of data validation is to ensure correct user input.
+
+Validation can be defined by many different methods, and deployed in many different ways.
+
+Server side validation is performed by a web server, after input has been sent to the server.
+
+Client side validation is performed by a web browser, before input is sent to a web server.
+
+HTML Constraint Validation
+HTML5 introduced a new HTML validation concept called constraint validation.
+
+HTML constraint validation is based on:
+
+Constraint validation HTML Input Attributes
+Constraint validation CSS Pseudo Selectors
+Constraint validation DOM Properties and Methods
+Constraint Validation HTML Input Attributes
+Attribute	Description
+disabled	Specifies that the input element should be disabled
+max	Specifies the maximum value of an input element
+min	Specifies the minimum value of an input element
+pattern	Specifies the value pattern of an input element
+required	Specifies that the input field requires an element
+type 	Specifies the type of an input element
+For a full list, go to HTML Input Attributes.
+
+Constraint Validation CSS Pseudo Selectors
+Selector	Description
+:disabled	Selects input elements with the "disabled" attribute specified
+:invalid	Selects input elements with invalid values
+:optional	Selects input elements with no "required" attribute specified
+:required	Selects input elements with the "required" attribute specified
+:valid	Selects input elements with valid values
+
+*/
+
+
+
+
+
+/*
+
+JavaScript HTML DOM - Changing CSS
+The HTML DOM allows JavaScript to change the style of HTML elements.
+
+Changing HTML Style
+To change the style of an HTML element, use this syntax:
+
+document.getElementById(id).style.property = new style
+The following example changes the style of a <p> element:
+
+Example
+<html>
+<body>
+
+<p id="p2">Hello World!</p>
+
+<script>
+document.getElementById("p2").style.color = "blue";
+</script>
+
+</body>
+</html>
+Using Events
+The HTML DOM allows you to execute code when an event occurs.
+
+Events are generated by the browser when "things happen" to HTML elements:
+
+An element is clicked on
+The page has loaded
+Input fields are changed
+You will learn more about events in the next chapter of this tutorial.
+
+This example changes the style of the HTML element with id="id1", when the user clicks a button:
+
+Example
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="id1">My Heading 1</h1>
+
+<button type="button"
+onclick="document.getElementById('id1').style.color = 'red'">
+Click Me!</button>
+
+</body>
+</html>
+
+More Examples
+Visibility: How to make an element invisible. Do you want to show the element or not?
+HTML DOM Style Object Reference
+For all HTML DOM style properties, look at w3schools
+
+*/
